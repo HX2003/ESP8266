@@ -86,7 +86,7 @@ bool HTTPSRedirect::printRedir(void){
         {
           // Get re-direction URL from the 'Location' field in the header
           if (getLocationURL()){
-            //stop(); // may not be required
+            stop();
 
             _myResponse.redirected = true;
             
